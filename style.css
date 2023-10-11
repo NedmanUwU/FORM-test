@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Poppins";
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    column-gap: 30px;
+  }
+
+  header {
+    padding-top: 15px;
+    grid-column: span 3;
+    text-align: center;
+    background-color: red;
+    color: white;
+    font-style: italic;
+  }
+
+  header h2{
+    border: 3px solid white;
+    border-radius: 15px;
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-top: 0;
+  }
+
+  .form h3{
+    border: 3px solid red;
+    border-radius: 15px;
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-top: 0;
+  }
+
+  nav{
+    grid-column: span 3;
+    background-color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    width: 100%;
+  }
+
+  nav a{
+    text-align: start;
+    padding: 15px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 0px;
+  }
+
+  aside{
+    margin-top: 0;
+    grid-column: 1;
+    overflow: hidden;
+    position: relative;
+  }
+  .login {
+    position: fixed;
+    grid-column: 1;
+    z-index: 2;
+    margin-top: 20%;
+    margin-left: 5px;
+    padding: 10px;
+    border: 3px solid#f3aa21;
+    border-radius: 15px;
+    background-color: white;  
+  }
+
+  .login p{
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .login h5{
+    text-align: center;
+    font-weight: 200;
+    margin: 3px;
+  }
+
+  input[type=email], input[type=password]{
+    border: none;
+    border-bottom: 2px solid #f3aa21;
+    padding: 5px;
+    margin-left: 10px;
+  }
+
+  input[type=email]:focus, input[type=password]:focus {
+    border-bottom: 3px solid black;
+    transform: scale(1.1);
+    outline: none;
+  }
+
+  #loginbutton{
+    background-color: #f3aa21;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 33%
+  }
+
+  #Confirmbutton{
+    grid-column: 2;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    background-color: red;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color:   white;
+  }
+
+  #loginbutton:hover, #Confirmbutton:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+  }
+
+  #option1, #option2, #option3, #option4, #option5, #option6, #security1{
+    accent-color: red;
+  }
+
+  .form{
+    padding: 30px;
+    background-color: white;
+  }
+
+  .form h3{
+    font-style: italic;
+    color: red;
+    text-align: center;
+  }
+
+  .formform{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    margin: auto;
+    background-color: rgb(227, 227, 227) ;
+    color: black;
+  }
+
+  input[type=text], textarea{
+    border: 2px solid #a4a4a4;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  input[type=text]:focus, textarea:focus{
+    border: 2px solid red;
+    outline: none;
+  }
+
+  .q1, .q2, .q3, .q4, .q5, .q6, .q7, .q8{
+    padding: 15px;
+  }
+
+  .formform p{
+    font-size: 20px;
+    border-bottom: 1px solid #a4a4a4;
+  }
+
+  .right{
+    grid-column: 3;
+    overflow: hidden;
+  }
+
+  .pattern{
+    background-color: #ffffff;
+    opacity: 0.8;
+    background-image:  linear-gradient(135deg, #f7bf45 25%, transparent 25%), linear-gradient(225deg, #f7bf45 25%, transparent 25%), linear-gradient(45deg, #f7bf45 25%, transparent 25%), linear-gradient(315deg, #f7bf45 25%, #ffffff 25%);
+    background-position:  15px 0, 15px 0, 0 0, 0 0;
+    background-size: 30px 30px;
+    background-repeat: repeat;
+    height: 100%;
+    width: 500px;
+
+    animation: MoveForever 2s linear infinite;
+  }
+
+  @keyframes MoveForever {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-30px);
+    }
+  }
+
+  footer{
+    grid-column: span 3;
+    text-align: center;
+  }
