@@ -204,4 +204,5 @@ body {
   footer{
     grid-column: span 3;
     text-align: center;
+    border-top: 1px solid #a4a4a4;
   }
